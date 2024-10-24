@@ -1,15 +1,15 @@
 import os
 from dotenv import load_dotenv
 from scrapy.crawler import CrawlerProcess
-from articles_scraper.spiders.article_spider import ArticleSpider
-from services.config_service import AppConfig
+from articles-scraper.articles_scraper.spiders.article_spider import ArticleSpider
+from articles-scraper.services.config_service import AppConfig
 from scrapy.settings import Settings
-from articles_scraper import settings as s
+from articles-scraper.articles_scraper import settings as project_settings
+
 def main():
     config = AppConfig(os.environ)
-
     settings = Settings()
-    settings.setmodule(s)
+    settings.setmodule(project_settings)
 
     process = CrawlerProcess(settings)
     spider = ArticleSpider(config=config)
