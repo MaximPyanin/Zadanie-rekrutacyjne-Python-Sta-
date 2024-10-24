@@ -1,7 +1,7 @@
-from scrapy import Field
+from scrapy import Field, Item
 
 
-class ArticlesScraperItem(scrapy.Item):
+class ArticlesScraperItem(Item):
     title = Field()
     category = Field()
     publication_date = Field()

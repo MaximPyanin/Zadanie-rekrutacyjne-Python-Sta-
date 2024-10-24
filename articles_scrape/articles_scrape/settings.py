@@ -1,7 +1,7 @@
-BOT_NAME = "articles-scraper"
+BOT_NAME = "articles_scrape"
 
-SPIDER_MODULES = ["articles-scraper.spiders"]
-NEWSPIDER_MODULE = "articles-scraper.spiders"
+SPIDER_MODULES = ["articles_scrape.spiders"]
+NEWSPIDER_MODULE = "articles_scrape.spiders"
 
 ROBOTSTXT_OBEY = True
 
@@ -10,7 +10,7 @@ REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 
 
 DOWNLOADER_MIDDLEWARES = {
-    "articles-scraper.middlewares.ArticlesScraperDownloaderMiddleware": 543,
+    "articles_scrape.middlewares.ArticlesScraperMiddleware": 543,
 }
 
 TELNETCONSOLE_ENABLED = False

@@ -19,7 +19,7 @@ The Article Scraper is a Python application designed to extract article informat
 ### 📂 Clone the Repository
 
 ```bash
-git clone https://github.com/YourUsername/articles-scraper.git
+git clone https://github.com/MaximPyanin/Zadanie-rekrutacyjne-Python-Sta-.git
 ```
 
 ### 🔐 Set Up Environment Variables

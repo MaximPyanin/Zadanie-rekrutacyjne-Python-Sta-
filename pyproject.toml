@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["MaximPyanin <maximpyanin@icloud.com>"]
 readme = "README.md"
-packages = [{include = "articles-scraper"}]
+packages = [{include = "articles_scrape"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"

@@ -6,9 +6,9 @@ from scrapy.http import Request
 from scrapy.spiders import Spider
 
 
-class ArticlesScraperDownloaderMiddleware:
+class ArticlesScraperMiddleware:
     @classmethod
-    def from_crawler(cls, crawler: Spider) -> "ArticlesScraperDownloaderMiddleware":
+    def from_crawler(cls, crawler: Spider) -> "ArticlesScraperMiddleware":
         return cls()
 
     def __init__(self) -> None:
